@@ -7,137 +7,71 @@
   <style>
     body {
       <style>
-   body {
-
+   body {
       margin: 0;
-
       padding: 0;
-
       background: linear-gradient(to right, #ffe6f0, #e6f7ff);
-
       font-family: 'Segoe UI', sans-serif;
-
       overflow: hidden;
-
       text-align: center;
-
       color: #333;
-
     }
-
-
 
     h1#question {
-
       margin-top: 100px;
-
       font-size: 2rem;
-
       color: #e60073;
-
     }
-
-
 
     .btn {
-
       padding: 1rem 2rem;
-
       font-size: 1.2rem;
-
       margin: 1rem;
-
       border: none;
-
       border-radius: 10px;
-
       cursor: pointer;
-
       background: #ff4da6;
-
       color: white;
-
       position: relative;
-
     }
-
-
 
     #noBtn { position: absolute; }
-
     .hidden { display: none; }
 
-
-
     #resultScene img { width: 150px; margin-top: 20px; }
-
     #resultText { font-size: 1.8rem; color: #e60073; font-weight: bold; margin-top: 20px; }
 
-
-
     .poem-line {
-
       opacity: 0;
-
       font-size: 1.2rem;
-
       transition: opacity 1s ease;
-
       margin: 10px 0;
-
     }
-
     .poem-line.show { opacity: 1; }
 
-
-
     .heart {
-
       position: absolute;
-
       width: 20px;
-
       height: 20px;
-
       background: red;
-
       transform: rotate(45deg);
-
       animation: float 6s linear infinite;
-
     }
-
     .heart::before, .heart::after {
-
       content: "";
-
       position: absolute;
-
       width: 20px;
-
       height: 20px;
-
       background: red;
-
       border-radius: 50%;
-
     }
-
     .heart::before { top: -10px; left: 0; }
-
     .heart::after { left: -10px; top: 0; }
 
-
-
     @keyframes float {
-
       0% { transform: translateY(0); opacity: 1; }
-
       100% { transform: translateY(-100vh); opacity: 0; }
-
     }
-
-
 
     .highlight { color: #ff4da6; font-weight: bold; }
   </style>
